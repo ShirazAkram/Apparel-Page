@@ -1,0 +1,115 @@
+.parent-container{
+    height: 100%;
+    width: 100%;
+    background: transparent linear-gradient(136deg, #FCF3F3 0%, #FFFFFF 49%, #FAF1F0 100%) 0% 0% no-repeat padding-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo{
+    display: flex;
+    grid-row: 1;
+    height: 50px;
+    width: 30px;
+    padding-top: 6rem;
+    grid-column: 1/3;
+}
+
+.logo-img{
+    margin-left: 8rem;
+}
+
+.main-div{
+    grid-column: 1/3;
+    grid-row: 1;
+    padding-top: 15rem;
+    padding-left: 8rem;
+    padding-right: 5rem;
+    font-size: 32px;
+}
+
+.first-line{
+    color: #D2A1A2;
+    letter-spacing: 20px;
+    font-size: 64px;
+}
+
+.second-line{
+    color: #393334;
+    letter-spacing: 20px;
+    font-size: 64px;
+}
+
+.third-line{
+    color: #9A6B69;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.apperal-form{
+    margin-top: 30px;
+    position: relative;
+}
+
+.apperal-form input{
+    width: 90%;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #9A6B69;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.apperal-action{
+    height: 35px;
+    width: 64px;
+    color: white;
+    background: #E7A09E 0% 0% no-repeat padding-box;
+    display: inline-block;
+    position: absolute;
+    border-radius: 30px;
+    right: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    .parent-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 50% 5%;
+    }
+
+    .logo{
+        grid-column: 1;
+        padding: 0;
+        grid-row: 1/2;
+    }
+    .main-div{
+        grid-column: 1;
+        padding: 0;
+        grid-row: 3/4;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .apperal-image{
+        grid-row: 2/3;
+        margin-top: 20px;
+    }
+    .image-girl{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .first-line{
+        font-size: 32px;
+    }
+    .second-line{
+        font-size: 32px;
+        letter-spacing: 10px;
+    }
+    .third-line{
+        font-size: small;
+    }
+    .apperal-form{
+        text-align: left;
+    }
+}
